@@ -1,16 +1,22 @@
 package project.Bean;
 
-import javax.faces.application.FacesMessage;
-import javax.faces.context.FacesContext;
-import javax.servlet.http.HttpSession;
+import java.io.Serializable;
 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import project.DAO.LoginDAO;
 
 
+@SuppressWarnings("deprecation")
+@ManagedBean(name="Login")
+@SessionScoped
 
+public class Login implements Serializable {
 
-public class Login {
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8155686881885234142L;
 	private String pwd;
 	private String msg;
 	private String user;

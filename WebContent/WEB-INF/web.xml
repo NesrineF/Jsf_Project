@@ -6,7 +6,7 @@
 	<display-name>JSF1</display-name>
 	<context-param>
 		<param-name>javax.faces.DEFAULT_SUFFIX</param-name>
-		<param-value>.xhtml</param-value>
+		<param-value>/WEB-INF/faces-config.xml</param-value>
 	</context-param>
 	<servlet>
 		<servlet-name>Test</servlet-name>
@@ -17,4 +17,5 @@
 		<servlet-name>Test</servlet-name>
 		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
+	
 </web-app>
